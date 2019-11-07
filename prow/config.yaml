@@ -70,7 +70,7 @@ slack_reporter:
     '*': test-failures
     'istio-private': private-test-failures
   # The template shown below is the default
-  report_template: 'Job {{.Spec.Job}} of type {{.Spec.Type}} ended with state {{.Status.State}}. <{{.Status.URL}}|View logs>'
+  report_template: 'Job *{{.Spec.Job}}* of type *{{.Spec.Type}}* ended with state *{{.Status.State}}*. <{{.Status.URL}}|View logs>'
 
 # Report job status for presubmit and postsubmit
 github_reporter:
